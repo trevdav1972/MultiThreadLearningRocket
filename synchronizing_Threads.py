@@ -25,8 +25,8 @@ def halve():
     print("Reached the minimum!")
     lock.release()
 
-t1 = threading.Thread(target = halve)
-t2 = threading.Thread(target = double)
+t1 = threading.Thread(target = double)
+t2 = threading.Thread(target = halve)
 
 t1.start()
 t2.start()
